@@ -1,7 +1,7 @@
 import CoreValues from '@/components/pages/about/CoreValues'
 import OurHistories from '@/components/pages/about/OurHistories'
 import WeAreBestSection from '@/components/pages/about/WeAreBestSection'
-import TotalAnalysis from '@/components/shared/TotalAnalysis'
+// import TotalAnalysis from '@/components/shared/TotalAnalysis'
 import Container from '@/components/ui/Container'
 import EveryPageHeroSection from '@/components/ui/EveryPageHeroSection'
 import React from 'react'
@@ -15,7 +15,7 @@ const AboutUs = () => {
       <Container className='flex justify-center mb-20 text-gray-600' >
         <div className='mt-80 md:pt-20 lg:mt-0'>
 
-        <TotalAnalysis/>
+        {/* <TotalAnalysis/> */}
         </div>
       </Container>
       <CoreValues />

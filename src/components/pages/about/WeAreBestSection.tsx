@@ -24,7 +24,7 @@ const WeAreBestSection = () => {
               Our commitment to innovation, quality, and transparency defines our legacy at Blue Sky City.
             </p>
           </div>
-        <div className="bg-white shadow-md rounded-md -mb-64 my-10 w-full h-auto">
+        <div className="bg-white shadow-md rounded-md lg:-mb-64 -mb-[800px]  my-10 w-full h-auto">
 
             <div className="flex lg:flex-row flex-col gap-5 justify-between w-full h-full">
               <div className="lg:flex-1 flex justify-center lg:items-center h-full">
