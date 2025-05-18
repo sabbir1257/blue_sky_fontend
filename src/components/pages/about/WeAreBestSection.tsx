@@ -10,7 +10,7 @@ import React from "react";
 const WeAreBestSection = () => {
   return (
     <div
-      className="relative w-full h-[75vh] mb-72 parallax"
+      className="relative w-full h-[75vh] mb-[850px] md:mb-72 parallax"
       style={{
         backgroundImage: "url('/images/land3.jpg')",
       }}
