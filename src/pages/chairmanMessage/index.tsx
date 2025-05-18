@@ -4,28 +4,37 @@ import React from "react";
 const ChairmanMessage = () => {
   return (
     <div className="lg:max-w-[1200px] mx-auto">
-      <h1 className="text-center mt-10 p-2 text-slate-50 rounded-lg text-5xl bg-blue-900 w-2/5 mx-auto">
-        Chairman's Message
-      </h1>
-      <div className="flex flex-col lg:flex-row  gap-6 lg:m-10 m-6 ">
+      <div className="flex flex-col lg:flex-row  gap-6 lg:m-10 m-6 ma ">
         <div className="lg:flex-1 w-full">
           <Image
             width={500}
             height={500}
             src={"/images/man2.jpg"}
             alt="img"
-            className="h-[60vh] w-full object-cover rounded-xl"
+            className="h-[55vh] w-full object-cover rounded-xl"
           />
-          <div>
-            <h1 className="lg:text-4xl text-2xl font-bold pt-6">
+          <div className="max-w-xl text-center md:text-left">
+            <h1 className="text-3xl lg:text-5xl font-extrabold text-[#1e3a8a] tracking-wide leading-tight">
               Md Miraz Hossain Ovi
             </h1>
-            <h3 className="text-xl text-[#1e3a8a] font-semibold pb-3">
+            <h3 className="text-xl lg:text-2xl text-black font-semibold uppercase tracking-wide mt-2">
               Chairman
             </h3>
           </div>
         </div>
         <div className="lg:w-[57%]">
+         <section className="about-section p-6 bg-gray-50 rounded-md shadow-md max-w-xl mx-auto mt-10">
+  <h1 className="text-3xl font-extrabold text-gray-900 lg:text-5xl mb-2">
+    Md Miraz Hossain Ovi
+  </h1>
+  <h3 className="text-xl text-blue-800 font-semibold mb-4">
+    Managing Director
+  </h3>
+  <p className="text-gray-700 leading-relaxed">
+    Welcome to the about section! Md Miraz Hossain Ovi is the Managing Director, bringing leadership and vision to the company. With a commitment to excellence and innovation, he drives the team toward success and growth.
+  </p>
+</section>
+
           <p className="text-justify pb-2">
             I hope this message finds you in good health and high spirits. It is
             both a privilege and an honor to address you as the Chairman of Blue
@@ -84,7 +93,7 @@ const ChairmanMessage = () => {
         </div>
       </div>
       <div
-        className="flex flex-col lg:flex-row-reverse gap-6 lg:m-20 m-6"
+        className="flex-col lg:flex-row-reverse gap-6 lg:m-20 bg-white  flex  p-4 rounded-lg shadow-lg items-center"
         id="managingDirector"
       >
         <div className="lg:flex-1 w-full">
@@ -95,12 +104,21 @@ const ChairmanMessage = () => {
             alt="img"
             className="h-[60vh] w-full object-cover rounded-xl"
           />
-          <h1 className="text-2xl font-bold lg:text-4xl mt-6">Md Miraz Hossain Ovi</h1>
+          <h1 className="text-2xl font-bold lg:text-4xl mt-6">
+            Md Miraz Hossain Ovi
+          </h1>
           <h3 className="text-xl text-[#1e3a8a] font-semibold pb-3">
             Managing Director
           </h3>
         </div>
         <div className="lg:w-[57%]">
+          <div className="relative mb-6">
+            <h3 className="text-2xl font-semibold text-[#1e3a8a] border-b-2 border-black inline-block pb-2">
+              Managing Director Message
+            </h3>
+            <span className="block w-16 h-1 bg-black mt-2 rounded"></span>
+          </div>
+
           <p className="text-justify pb-2">
             I hope this message finds you in good health and high spirits. It is
             both a privilege and an honor to address you as the Chairman of Blue
@@ -158,6 +176,33 @@ const ChairmanMessage = () => {
           <p>Warm regards,</p>
         </div>
       </div>
+      {/* tast */}
+     <section className="bg-white max-w-[1200px] h-screen mx-auto flex items-center p-8 rounded-md shadow-md">
+  {/* Image on left */}
+  <div className="flex-shrink-0">
+    <img
+  src="/images/man2.jpg"
+  alt="Md Miraz Hossain Ovi"
+  className="w-72 h-72  object-cover shadow-lg" // Extra Large size
+/>
+
+  </div>
+
+  {/* Text content on right */}
+  <div className="ml-12 max-w-xl">
+    <h1 className="text-5xl font-extrabold text-gray-900 mb-3">
+      Md Miraz Hossain Ovi
+    </h1>
+    <h3 className="text-2xl text-blue-800 font-semibold mb-6">
+      Managing Director
+    </h3>
+    <p className="text-gray-700 text-lg leading-relaxed">
+      Welcome to the about section! Md Miraz Hossain Ovi is the Managing Director, bringing leadership and vision to the company. With a commitment to excellence and innovation, he drives the team toward success and growth.
+    </p>
+  </div>
+</section>
+
+
     </div>
   );
 };

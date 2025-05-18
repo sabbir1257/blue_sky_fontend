@@ -73,7 +73,7 @@ const Gallery = () => {
             className={`px-3 py-1 rounded transition-all duration-200 ${
               page === i + 1
                 ? "bg-[#eb204c] text-white shadow"
-                : "bg-gray-100 hover:bg-gray-200"
+                : "bg-gray-100 hover:bg-gray-500"
             }`}
           >
             {i + 1}

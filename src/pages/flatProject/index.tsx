@@ -24,12 +24,6 @@ const towerData = [
     description: 'Modern design tower with lake-facing apartments.',
     image: '/images/tower1.png',
   },
-  {
-    id: 3,
-    name: 'Tower 3',
-    description: 'Eco-friendly construction with community living.',
-    image: '/images/tower1.png',
-  },
 ];
 const slidesData = [
   {
@@ -73,7 +67,7 @@ const slidesData = [
 
 const SwiperComponent = () => {
   return (
-    <>
+    <div className='w-[1200px] mx-auto'>
 
       <div className=' h-[80vh] bg-[#1e232e] flex justify-center items-center'>
         <Swiper
@@ -123,7 +117,7 @@ const SwiperComponent = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold mb-12 text-center">Blue Sky Tower Designs</h2>
           <h5 className='lg:w-[80%] px-4 lg:px-0 mx-auto'>Blue sky city is a prominent land development company dedicated to shaping the future of real estate through innovative and sustainable projects. One of their flagship ventures, the Blue sky Tower Project, stands as a testament to their commitment to excellence. This ambitious undertaking combines the elements of modern urban living with thriving commercial spaces. Blue sky Tower is a symbol of architectural brilliance where individuals can experience the best of both worlds, offering a harmonious blend of residential and commercial areas. Here, they create not just apartments but thriving communities, providing people with the opportunity to own a piece of a dynamic, interconnected world. Blue sky Landmark Limited&apos;s Blue sky Tower Project redefines urban living, promising a lifestyle that is both convenient and luxurious.</h5>
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <div className="grid md:grid-cols-2 gap-8 mt-12">
             {towerData.map((tower, index) => (
               <motion.div
                 key={tower.id}
@@ -175,7 +169,7 @@ const SwiperComponent = () => {
         </div>
       </section>
       <FlowUsSection />
-    </>
+    </div>
   );
 };
 export default SwiperComponent;
