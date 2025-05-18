@@ -1,3 +1,5 @@
+import path from "path";
+
 export type TNavLinks = {
     name: string;
     path: string;
@@ -58,6 +60,11 @@ export const navLinks: TNavLinks[] = [
             {
                 name: "Blue Sky Flat Project",
                 path: "/flatProject"
+            }
+            ,
+            {
+                name: "Blue Sky Condominium",      
+                path: "project/BlueSkyCondominium"
             }
         ]
     },
