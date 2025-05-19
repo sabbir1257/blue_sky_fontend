@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import banner from "../../../../public/images/land3.jpg"; // Update to your actual banner image path
+import banner from "../../../../../public/images/land3.jpg";
 
 const BlueSkyBanner = () => {
   return (
@@ -17,7 +17,7 @@ const BlueSkyBanner = () => {
       {/* Centered Text */}
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="text-white md:text-4xl text-3xl font-bold uppercase tracking-wider">
-          About Us
+          Blue Skey Condominium
         </h1>
       </div>
     </section>
