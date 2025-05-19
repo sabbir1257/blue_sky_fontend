@@ -3,11 +3,12 @@ import Image from "next/image";
 import soldout from "../../../../public/images/condominium/soldout.webp";
 import tower from "../../../../public/images/condominium/tower-2.webp";
 import BlueSkyBanner from "@/components/pages/project/BlueSkyBanner";
+
 const BlueSkyCondominium = () => {
   return (
     <>
-    <BlueSkyBanner/>
-      <div className="w-[1200px] mx-auto md:mt-20">
+      <BlueSkyBanner />
+      <div className="lg:w-[1200px] p-4 mx-auto md:mt-20">
         <p className="text-justify">
           Unity Landmark Limited is a prominent land development company
           dedicated to shaping the future of real estate through innovative and
@@ -23,15 +24,15 @@ const BlueSkyCondominium = () => {
           redefines urban living, promising a lifestyle that is both convenient
           and luxurious.
         </p>
-        <div className="md:flex items-center justify-center my-10">
-          <div className="relative w-[420px] mx-auto bg-blue-100 rounded-lg shadow-lg p-4 transition transform hover:scale-105">
+        <div className="md:flex items-center justify-center my-10 gap-4">
+          <div className="my-4 relative md:w-[420px] w-full mx-auto bg-blue-100 rounded-lg shadow-lg p-4 transition transform hover:scale-105">
             {/* Image */}
-            <div className="relative h-[500px] overflow-hidden rounded-md">
+            <div className="relative md:h-[500px] h-96 overflow-hidden rounded-md">
               <Image
                 src={tower}
-                alt="Tower"
-                layout="fill"
-                objectFit="cover"
+                alt="Unity Tower 01"
+                fill
+                style={{ objectFit: "cover" }}
                 className="rounded-md"
               />
               {/* SOLD OUT Badge */}
@@ -53,17 +54,17 @@ const BlueSkyCondominium = () => {
               </p>
             </div>
           </div>
-          <div className=" w-[420px] mx-auto bg-blue-100 rounded-lg shadow-lg p-4 transition transform hover:scale-105">
+
+          <div className="my-4 md:w-[420px] mx-auto bg-blue-100 rounded-lg shadow-lg p-4 transition transform hover:scale-105">
             {/* Image */}
-            <div className="relative h-[500px] rounded-md">
+            <div className="relative md:h-[500px] h-96 overflow-hidden rounded-md">
               <Image
                 src={tower}
-                alt="Tower"
-                layout="fill"
-                objectFit="cover"
+                alt="Unity Tower 02"
+                fill
+                style={{ objectFit: "cover" }}
                 className="rounded-md"
               />
-              {/* SOLD OUT Badge */}
             </div>
             {/* Text Content */}
             <div className="mt-4 text-center">

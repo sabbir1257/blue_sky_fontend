@@ -4,7 +4,7 @@ import banner from "../../../../public/images/land3.jpg"; // Update to your actu
 
 const BlueSkyBanner = () => {
   return (
-    <section className="relative w-full h-[500px]">
+    <section className="relative w-full md:h-[500px] h-40">
       {/* Background Image */}
       <Image
         src={banner}
@@ -16,7 +16,7 @@ const BlueSkyBanner = () => {
 
       {/* Centered Text */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-white text-4xl font-bold uppercase tracking-wider">
+        <h1 className="text-white md:text-4xl text-3xl font-bold uppercase tracking-wider">
           About Us
         </h1>
       </div>
